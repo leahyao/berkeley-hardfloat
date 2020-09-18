@@ -52,7 +52,7 @@ class
         val expected = new Bundle {
             val out = Input(Bits((outExpWidth + outSigWidth).W))
             val exceptionFlags = Input(Bits(5.W))
-            val recOut = Input(Bits((outExpWidth + outSigWidth + 1).W))
+            val recOut = Output(Bits((outExpWidth + outSigWidth + 1).W))
         }
 
         val actual = new Bundle {
