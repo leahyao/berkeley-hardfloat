@@ -623,7 +623,7 @@ class DivSqrtRecF64ToRaw_mulAddZ31 extends Module
         Mux(cyc_E3_sqrt,
             (Mux(sExp_PC(0),
                  sigB_PC(0)<<1,
-                 sigB_PC(1) ^ sigB_PC(0) ## sigB_PC(0)
+                 (sigB_PC(1) ^ sigB_PC(0)) ## sigB_PC(0)
              ) ^ ((~ sigT_E(0))<<1)
             )<<54,
             0.U
