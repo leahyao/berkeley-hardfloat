@@ -58,102 +58,102 @@ object FMATest {
         val testArgs = args.slice(1, args.length).toArray
         def driver(gen: =>RawModule) = new (chisel3.stage.ChiselStage).emitVerilog(gen, testArgs)
         args(0) match {
-           //case "f16FromRecF16" =>
-           //  driver(new ValExec_f16FromRecF16)
-           //case "f32FromRecF32" =>
-           //  driver(new ValExec_f32FromRecF32)
-           //case "f64FromRecF64" =>
-           //  driver(new ValExec_f64FromRecF64)
-           //case "UI32ToRecF16" =>
-           //    driver(new ValExec_UI32ToRecF16)
-           //case "UI32ToRecF32" =>
-           //    driver(new ValExec_UI32ToRecF32)
-           //case "UI32ToRecF64" =>
-           //    driver(new ValExec_UI32ToRecF64)
-           //case "UI64ToRecF16" =>
-           //    driver(new ValExec_UI64ToRecF16)
-           //case "UI64ToRecF32" =>
-           //    driver(new ValExec_UI64ToRecF32)
-           //case "UI64ToRecF64" =>
-           //    driver(new ValExec_UI64ToRecF64)
-           //case "I32ToRecF16" =>
-           //    driver(new ValExec_I32ToRecF16)
-           //case "I32ToRecF32" =>
-           //    driver(new ValExec_I32ToRecF32)
-           //case "I32ToRecF64" =>
-           //    driver(new ValExec_I32ToRecF64)
-           //case "I64ToRecF16" =>
-           //    driver(new ValExec_I64ToRecF16)
-           //case "I64ToRecF32" =>
-           //    driver(new ValExec_I64ToRecF32)
-           //case "I64ToRecF64" =>
-           //    driver(new ValExec_I64ToRecF64)
-           //case "RecF16ToUI32" =>
-           //    driver(new ValExec_RecF16ToUI32)
-           //case "RecF16ToUI64" =>
-           //    driver(new ValExec_RecF16ToUI64)
-           //case "RecF32ToUI32" =>
-           //    driver(new ValExec_RecF32ToUI32)
-           //case "RecF32ToUI64" =>
-           //    driver(new ValExec_RecF32ToUI64)
-           //case "RecF64ToUI32" =>
-           //    driver(new ValExec_RecF64ToUI32)
-           //case "RecF64ToUI64" =>
-           //    driver(new ValExec_RecF64ToUI64)
-           //case "RecF16ToI32" =>
-           //    driver(new ValExec_RecF16ToI32)
-           //case "RecF16ToI64" =>
-           //    driver(new ValExec_RecF16ToI64)
-           //case "RecF32ToI32" =>
-           //    driver(new ValExec_RecF32ToI32)
-           //case "RecF32ToI64" =>
-           //    driver(new ValExec_RecF32ToI64)
-           //case "RecF64ToI32" =>
-           //    driver(new ValExec_RecF64ToI32)
-           //case "RecF64ToI64" =>
-           //    driver(new ValExec_RecF64ToI64)
-           //case "RecF16ToRecF32" =>
-           //    driver(new ValExec_RecF16ToRecF32)
-           //case "RecF16ToRecF64" =>
-           //    driver(new ValExec_RecF16ToRecF64)
-           //case "RecF32ToRecF16" =>
-           //    driver(new ValExec_RecF32ToRecF16)
-           //case "RecF32ToRecF64" =>
-           //    driver(new ValExec_RecF32ToRecF64)
-           //case "RecF64ToRecF16" =>
-           //    driver(new ValExec_RecF64ToRecF16)
-           //case "RecF64ToRecF32" =>
-           //    driver(new ValExec_RecF64ToRecF32)
-           //case "MulAddRecF16_add" =>
-           //    driver(new ValExec_MulAddRecF16_add)
-           //case "MulAddRecF16_mul" =>
-           //    driver(new ValExec_MulAddRecF16_mul)
-           //case "MulAddRecF16" =>
-           //    driver(new ValExec_MulAddRecF16)
-           //case "MulAddRecF32_add" =>
-           //    driver(new ValExec_MulAddRecF32_add)
-           //case "MulAddRecF32_mul" =>
-           //    driver(new ValExec_MulAddRecF32_mul)
-           //case "MulAddRecF32" =>
-           //    driver(new ValExec_MulAddRecF32)
-           //case "MulAddRecF64_add" =>
-           //    driver(new ValExec_MulAddRecF64_add)
-           //case "MulAddRecF64_mul" =>
-           //    driver(new ValExec_MulAddRecF64_mul)
-           //case "MulAddRecF64" =>
-           //    driver(new ValExec_MulAddRecF64)
-           // case "DivSqrtRecF16_small_div" =>
-           //     driver(new ValExec_DivSqrtRecF16_small_div)
-           // case "DivSqrtRecF16_small_sqrt" =>
-           //     driver(new ValExec_DivSqrtRecF16_small_sqrt)
-           // case "DivSqrtRecF32_small_div" =>
-           //     driver(new ValExec_DivSqrtRecF32_small_div)
-           // case "DivSqrtRecF32_small_sqrt" =>
-           //     driver(new ValExec_DivSqrtRecF32_small_sqrt)
-           // case "DivSqrtRecF64_small_div" =>
-           //     driver(new ValExec_DivSqrtRecF64_small_div)
-           // case "DivSqrtRecF64_small_sqrt" =>
-           //     driver(new ValExec_DivSqrtRecF64_small_sqrt)
+           case "f16FromRecF16" =>
+             driver(new ValExec_f16FromRecF16)
+           case "f32FromRecF32" =>
+             driver(new ValExec_f32FromRecF32)
+           case "f64FromRecF64" =>
+             driver(new ValExec_f64FromRecF64)
+           case "UI32ToRecF16" =>
+               driver(new ValExec_UI32ToRecF16)
+           case "UI32ToRecF32" =>
+               driver(new ValExec_UI32ToRecF32)
+           case "UI32ToRecF64" =>
+               driver(new ValExec_UI32ToRecF64)
+           case "UI64ToRecF16" =>
+               driver(new ValExec_UI64ToRecF16)
+           case "UI64ToRecF32" =>
+               driver(new ValExec_UI64ToRecF32)
+           case "UI64ToRecF64" =>
+               driver(new ValExec_UI64ToRecF64)
+           case "I32ToRecF16" =>
+               driver(new ValExec_I32ToRecF16)
+           case "I32ToRecF32" =>
+               driver(new ValExec_I32ToRecF32)
+           case "I32ToRecF64" =>
+               driver(new ValExec_I32ToRecF64)
+           case "I64ToRecF16" =>
+               driver(new ValExec_I64ToRecF16)
+           case "I64ToRecF32" =>
+               driver(new ValExec_I64ToRecF32)
+           case "I64ToRecF64" =>
+               driver(new ValExec_I64ToRecF64)
+           case "RecF16ToUI32" =>
+               driver(new ValExec_RecF16ToUI32)
+           case "RecF16ToUI64" =>
+               driver(new ValExec_RecF16ToUI64)
+           case "RecF32ToUI32" =>
+               driver(new ValExec_RecF32ToUI32)
+           case "RecF32ToUI64" =>
+               driver(new ValExec_RecF32ToUI64)
+           case "RecF64ToUI32" =>
+               driver(new ValExec_RecF64ToUI32)
+           case "RecF64ToUI64" =>
+               driver(new ValExec_RecF64ToUI64)
+           case "RecF16ToI32" =>
+               driver(new ValExec_RecF16ToI32)
+           case "RecF16ToI64" =>
+               driver(new ValExec_RecF16ToI64)
+           case "RecF32ToI32" =>
+               driver(new ValExec_RecF32ToI32)
+           case "RecF32ToI64" =>
+               driver(new ValExec_RecF32ToI64)
+           case "RecF64ToI32" =>
+               driver(new ValExec_RecF64ToI32)
+           case "RecF64ToI64" =>
+               driver(new ValExec_RecF64ToI64)
+           case "RecF16ToRecF32" =>
+               driver(new ValExec_RecF16ToRecF32)
+           case "RecF16ToRecF64" =>
+               driver(new ValExec_RecF16ToRecF64)
+           case "RecF32ToRecF16" =>
+               driver(new ValExec_RecF32ToRecF16)
+           case "RecF32ToRecF64" =>
+               driver(new ValExec_RecF32ToRecF64)
+           case "RecF64ToRecF16" =>
+               driver(new ValExec_RecF64ToRecF16)
+           case "RecF64ToRecF32" =>
+               driver(new ValExec_RecF64ToRecF32)
+           case "MulAddRecF16_add" =>
+               driver(new ValExec_MulAddRecF16_add)
+           case "MulAddRecF16_mul" =>
+               driver(new ValExec_MulAddRecF16_mul)
+           case "MulAddRecF16" =>
+               driver(new ValExec_MulAddRecF16)
+           case "MulAddRecF32_add" =>
+               driver(new ValExec_MulAddRecF32_add)
+           case "MulAddRecF32_mul" =>
+               driver(new ValExec_MulAddRecF32_mul)
+           case "MulAddRecF32" =>
+               driver(new ValExec_MulAddRecF32)
+           case "MulAddRecF64_add" =>
+               driver(new ValExec_MulAddRecF64_add)
+           case "MulAddRecF64_mul" =>
+               driver(new ValExec_MulAddRecF64_mul)
+           case "MulAddRecF64" =>
+               driver(new ValExec_MulAddRecF64)
+            case "DivSqrtRecF16_small_div" =>
+                driver(new ValExec_DivSqrtRecF16_small_div)
+            case "DivSqrtRecF16_small_sqrt" =>
+                driver(new ValExec_DivSqrtRecF16_small_sqrt)
+            case "DivSqrtRecF32_small_div" =>
+                driver(new ValExec_DivSqrtRecF32_small_div)
+            case "DivSqrtRecF32_small_sqrt" =>
+                driver(new ValExec_DivSqrtRecF32_small_sqrt)
+            case "DivSqrtRecF64_small_div" =>
+                driver(new ValExec_DivSqrtRecF64_small_div)
+            case "DivSqrtRecF64_small_sqrt" =>
+                driver(new ValExec_DivSqrtRecF64_small_sqrt)
             case "DivSqrtRecF64_div" =>
                 driver(new ValExec_DivSqrtRecF64_div)
             case "DivSqrtRecF64_sqrt" =>
@@ -176,7 +176,6 @@ object FMATest {
                 driver(new ValExec_CompareRecF64_le)
             case "CompareRecF64_eq" =>
                 driver(new ValExec_CompareRecF64_eq)
-            case _ =>
                 
         }
     }
